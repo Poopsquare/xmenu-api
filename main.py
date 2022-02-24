@@ -5,9 +5,9 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get
+@app.get("/")
 async def root():
     """
     GET /
     """
-    return {"message": "Hello World"}
+    return {"msg": "Hello World"}
